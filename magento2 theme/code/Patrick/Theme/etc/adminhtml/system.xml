@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <tab id="ptheme_core" translate="label" sortOrder="51">
+            <label>Theme Settings</label>
+        </tab>
+        <section id="ptheme_settings" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Theme Options</label>
+            <tab>ptheme_core</tab>
+            <resource>Patrick_Theme::config</resource>
+            <group id="header" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Header</label>
+                <field id="static_block" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Static Block ID</label>
+                </field>
+            </group>
+            <group id="ptheme_custom_css" translate="label" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+              <label>Custom CSS</label>
+              <field id="ptheme_custom_style1" translate="label comment" type="textarea" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Custom Style 1</label>
+                <comment>
+                  Add your custom css style here
+                </comment>
+              </field>
+              <field id="ptheme_custom_style2" translate="label comment" type="textarea" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Custom Style 2</label>
+                <comment>
+                Custom css style 2
+                </comment>
+              </field>
+            </group>
+        </section>
+    </system>
+</config>

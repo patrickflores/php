@@ -1,0 +1,4 @@
+<?php
+    $header_type = $this->getConfig('ptheme_settings/header/static_block');
+    echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId($header_type)->toHtml();
+?>

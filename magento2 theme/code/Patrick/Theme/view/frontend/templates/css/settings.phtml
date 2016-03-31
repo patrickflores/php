@@ -1,0 +1,17 @@
+/**
+Ptheme custom css file found in Stores> Configuration> Theme Settings> Design Option > Custom Style
+Your changes will be lost. Please do not change this file. <?php echo date("Y-m-d H:i:s"); ?>
+*/
+
+<?php
+    $ptheme_settings = $this->getConfig("ptheme_settings",$this->_coreRegistry->registry('ptheme_css_generator'));
+    $ptheme_helper = $this->helper('Patrick\Theme\Helper\CustomCssConfig');
+?>
+
+
+<?php
+if(isset($ptheme_settings['ptheme_custom_css']['ptheme_custom_style1']) && $ptheme_settings['ptheme_custom_css']['ptheme_custom_style1'])
+    echo $ptheme_settings['ptheme_custom_css']['ptheme_custom_style1'];
+if(isset($ptheme_settings['ptheme_custom_css']['ptheme_custom_style2']) && $ptheme_settings['ptheme_custom_css']['ptheme_custom_style2'])
+    echo $ptheme_settings['ptheme_custom_css']['ptheme_custom_style2'];
+?>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+    <default>
+        <ptheme_settings>
+            <header>
+                <header_type>1</header_type>
+                <static_block>porto_custom_block_for_header</static_block>
+            </header>
+        </ptheme_settings>
+    </default>
+</config>
